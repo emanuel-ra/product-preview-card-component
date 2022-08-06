@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="./css/app.css">
+  
+</head>
+<body class="bg-cream overflow-auto md:overflow-hidden">
+
+    <div class="w-screen h-screen p-3 md:p-0">
+      
+      <div class="md:h-[90%] flex justify-center items-center">
+
+      
+        <div class="w-[80%] lg:w-1/2 md:w-10/12 flex flex-col md:flex-row shadow-lg">
+
+          <div class="md:w-1/2 ">
+            <picture>
+              <source media="(min-width:650px)" srcset="./images/image-product-desktop.jpg">
+              <source media="(max-width:465px)" srcset="./images/image-product-mobile.jpg">
+              <img src="./images/image-product-desktop.jpg" alt="GABRIELLE CHANEL" class="w-full h-full sm:rounded-t-lg md:rounded-l-lg md:rounded-tr-none">
+            </picture>
+          </div>
+    
+          <div class="md:w-1/2 bg-white rounded-b-lg md:rounded-r-lg p-6 flex flex-col space-y-5">
+
+            <span class="font-Montserrat uppercase text-dark-grayish-blue text-lg">Perfume</span>
+
+            <h1 class="text-4xl font-Fraunces">Gabrielle Essence Eau De Parfum</h1>
+            
+            <p class="text-dark-grayish-blue font-Montserrat text-[14px]">
+              A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+              Perfumer-Creator for the House of CHANEL.
+            </p>
+
+            <div class="flex items-center">
+                <span class="text-dark-cyan text-4xl">$149.99</span>
+                <span class="ml-4 text-dark-grayish-blue line-through">$169.99</span>
+            </div>
+
+            <button class="bg-dark-cyan flex items-center justify-center space-x-3 text-white p-4 text-lg font-Montserrat rounded-lg hover:bg-very-dark-cyan">
+              <img src="./images/icon-cart.svg" alt="">
+              <span>Add to Cart</span>
+            </button>
+
+          </div>
+    
+        </div>
+
+      </div>
+
+      <div class="w-full text-center">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#" class="text-dark-cyan">Tomas Emanuel Ramirez Abarca</a>.
+      </div>   
+
+    </div>
+    
+
+  <!-- Preview
+
+  Gabrielle Essence Eau De Parfum
+
+  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+  Perfumer-Creator for the House of CHANEL.
+
+  $149.99
+  $169.99
+
+  Add to Cart -->
+  
+</body>
+</html>
